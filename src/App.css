@@ -1,38 +1,84 @@
-.App {
+/*Comment- This is the begining of Charles CSS*/
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Roboto", cursive; 
+}
+
+#emerservice2 {
+  background-color: #46b6f6; 
+}
+
+#emerservice {
+  color: white; 
+}
+
+#emerservice {
   text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 10px; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#emerservice:hover {
+  color: red;
+  /*Comment- This is rollover color for nav at bottom of page*/
+  text-decoration: none;
+  /*Comment- This removes the underline hyperlink*/ 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#bglogocolor {
+  background-color: white; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#topmainlogo {
+  float: right; 
 }
 
-.App-link {
-  color: #61dafb;
+#freeestimate {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#freeestimate2 {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px; 
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#freeestimate3 {
+  text-align: center;
+  right: 300px;
+  width: 300px;
+  padding: 10px;
+  margin: auto;
+}
+
+#socialMedia {
+  padding: 10px;
+  text-align: left;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: auto; 
+}
+
+#socialbutton {
+  padding: 10px;
+  text-align: center; 
+}
+
+#socialicons {
+  margin: 5px;
+}
+
+#search {
+  margin-top: 1px;
+  width: 400px; 
+  margin-left: auto;
 }
