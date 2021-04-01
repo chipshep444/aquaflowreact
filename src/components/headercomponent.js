@@ -27,7 +27,7 @@ class Header extends React.Component {
                         <img
                             id="topmainlogo"
                             className="img-fluid"
-                            src="/assets/img/aquaflowlogo-v1.jpg"
+                            src="/assets/img/aquaflowlogo-v1.jpg" alt="Aqauflow Plumbing"
                         />
                         <div id="search" className="gcse-search"></div>
                     </div>
