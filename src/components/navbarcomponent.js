@@ -1,18 +1,6 @@
 import React, { useState } from 'react';
-import {
-    Collapse,
-    Navbar,
-    NavbarToggler,
-    NavbarBrand,
-    Nav,
-    NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
-    NavbarText
-  } from 'reactstrap';
+import { Link } from 'react-router-dom';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 
   const MainNavBar = (props) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -21,174 +9,73 @@ import {
   
     return (
       <div>
-        <Navbar id="mainnavbar" className="navbar navbar-expand-md navbar-dark sticky-top">
-          <NavbarBrand href="/"><img src="/assets/img/droplogo30pix.jpg" height="30" width="30" alt="Water Drop" /></NavbarBrand>
-          <NavbarToggler onClick={toggle} />
-          <Collapse isOpen={isOpen} navbar>
-            <Nav className="mr-auto" navbar>
-              <NavItem>
-                <NavLink href="/components/">HOME</NavLink>
-              </NavItem>
-              <NavItem>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  COMPANY
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>
-                    About
-                  </DropdownItem>
-                  <DropdownItem>
-                    Pricing & Financing
-                  </DropdownItem>
-                  <DropdownItem>
-                    Warranties & Policies
-                  </DropdownItem>
-                  <DropdownItem>
-                    Careers
-                  </DropdownItem>
-                  <DropdownItem>
-                    Customer Feedback
-                  </DropdownItem>
-                  <DropdownItem>
-                  <a href="https://www.cs360studio.biz/blog">Blog</a>
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-              </NavItem>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                    SERVICES
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>
-                    24 Hour Emergency Plumbing
-                  </DropdownItem>
-                  <DropdownItem>
-                    Residential Plumber
-                  </DropdownItem>
-                  <DropdownItem>
-                    Sewer Repair & Snaking
-                  </DropdownItem>
-                  <DropdownItem>
-                    Water Heater Installation & Repair
-                  </DropdownItem>
-                  <DropdownItem>
-                    Drain Cleaning
-                  </DropdownItem>
-                  <DropdownItem>
-                    Burst Pipe Repair
-                  </DropdownItem>
-                  <DropdownItem>
-                    Garbage Disposal Repair and Installation
-                  </DropdownItem>
-                  <DropdownItem>
-                    Leak Detection
-                  </DropdownItem>
-                  <DropdownItem>
-                    Home Water Filtration
-                  </DropdownItem>
-                  <DropdownItem>
-                    Slab Leak Repair
-                  </DropdownItem>
-                  <DropdownItem>
-                    Repiping
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                    LOCATIONS SERVED
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>
-                    Metro West
-                  </DropdownItem>
-                  <DropdownItem>
-                    Ocoee
-                  </DropdownItem>
-                  <DropdownItem>
-                    Altamonte Springs
-                  </DropdownItem>
-                  <DropdownItem>
-                    Clermont
-                  </DropdownItem>
-                  <DropdownItem>
-                    Sanford
-                  </DropdownItem>
-                  <DropdownItem>
-                    Windermere
-                  </DropdownItem>
-                  <DropdownItem>
-                    Casselberry
-                  </DropdownItem>
-                  <DropdownItem>
-                    Winter Park
-                  </DropdownItem>
-                  <DropdownItem>
-                    Kissimmeee
-                  </DropdownItem>
-                  <DropdownItem>
-                    Lake Mary
-                  </DropdownItem>
-                  <DropdownItem>
-                    Winter Springs
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-              <NavItem>
-                <NavLink href="/components/">SPECIALS</NavLink>
-              </NavItem>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                    REVIEWS
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>
-                    Testimonials
-                  </DropdownItem>
-                  <DropdownItem>
-                    <a href="https://www.facebook.com/pages/category/Plumbing-Service/Aquaflow-Plumbing-Drain-Cleaning-106340521082142/">Facebook</a>
-                  </DropdownItem>
-                  <DropdownItem>
-                    <a href="https://www.thumbtack.com/fl/apopka/plumbing/aquaflow-plumbing/service/381348999605878794?project_pk=412011391633072132">Thumbtack</a>
-                  </DropdownItem>
-                  <DropdownItem>
-                    <a href="https://nextdoor.com/pages/aquaflow-plumbing-apopka-fl/">Nextdoor</a>
-                  </DropdownItem>
-                  <DropdownItem>
-                    <a href="https://www.google.com/maps/place/Aquaflow+Plumbing/@28.7095502,-81.5034693,15z/data=!4m12!1m6!3m5!1s0x0:0x994e208f3da9bc81!2sAquaflow+Plumbing!8m2!3d28.7096255!4d-81.5035551!3m4!1s0x0:0x994e208f3da9bc81!8m2!3d28.7096255!4d-81.5035551">Google Maps</a>
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-              <NavItem>
-                <NavLink href="/components/">CONTACT</NavLink>
-              </NavItem>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                    HELP
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>
-                    Service Request
-                  </DropdownItem>
-                  <DropdownItem>
-                    Ask A Pro
-                  </DropdownItem>
-                  <DropdownItem>
-                    Faq
-                  </DropdownItem>
-                  <DropdownItem>
-                   Helpful Tips
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-            </Nav>
-         
-          </Collapse>
-        </Navbar>
+        <Navbar id="mainnavbar" collapseOnSelect expand="lg" variant="dark">
+            <Navbar.Brand href="#home">
+              <img
+                src="/images/droplogo30pix.jpg"
+                width="30"
+                height="30"
+                className="d-inline-block align-top"
+              />
+            </Navbar.Brand>
+                  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                  <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="mx-auto">
+                      <Nav.Link href="/">HOME</Nav.Link>
+                      <NavDropdown title="COMPANY" id="collasible-nav-dropdown">
+                        <NavDropdown.Item href="/about">About</NavDropdown.Item>
+                        <NavDropdown.Item href="/finance">Pricing & Financing</NavDropdown.Item>
+                        <NavDropdown.Item href="/warranty">Warranties & Policies</NavDropdown.Item>
+                        <NavDropdown.Item href="/careers">Careers</NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.3">Customer Feedback</NavDropdown.Item>
+                        <NavDropdown.Item href="https://www.cs360studio.biz/blog">Blog</NavDropdown.Item>   
+                      </NavDropdown>
+                      <NavDropdown title="SERVICES" id="collasible-nav-dropdown">
+                        <NavDropdown.Item href="/emergency">24 Hour Emergency Plumbing</NavDropdown.Item>
+                        <NavDropdown.Item href="/residential">Residential Plumber</NavDropdown.Item>
+                        <NavDropdown.Item href="/commercial">Commercial Plumber</NavDropdown.Item>
+                        <NavDropdown.Item href="/sewer">Sewer Repair & Snaking</NavDropdown.Item>
+                        <NavDropdown.Item href="/waterheater">Water Heater Installation & Repair</NavDropdown.Item>
+                        <NavDropdown.Item href="/drain">Drain Cleaning</NavDropdown.Item>
+                        <NavDropdown.Item href="/burstpipe">Burst Pipe Repair</NavDropdown.Item>
+                        <NavDropdown.Item href="/garbagedisposal">Garbage Disposal Repair and Installation</NavDropdown.Item>
+                        <NavDropdown.Item href="/leakdetection">Leak Detection</NavDropdown.Item>
+                        <NavDropdown.Item href="/homewater">Home Water Filtration</NavDropdown.Item>
+                        <NavDropdown.Item href="/slab">Slab Leak Repair</NavDropdown.Item>
+                        <NavDropdown.Item href="/repipe">Repiping</NavDropdown.Item>
+                      </NavDropdown>
+                      <NavDropdown title="LOCATIONS SERVED" id="collasible-nav-dropdown">
+                        <NavDropdown.Item href="/locations">Metro West</NavDropdown.Item>
+                        <NavDropdown.Item href="/locations">Winter Garden</NavDropdown.Item>
+                        <NavDropdown.Item href="/locations">Ocoee</NavDropdown.Item>
+                        <NavDropdown.Item href="/locations">Altamonte Springs</NavDropdown.Item>
+                        <NavDropdown.Item href="/locations">Clermont</NavDropdown.Item>
+                        <NavDropdown.Item href="/locations">Sanford</NavDropdown.Item>
+                        <NavDropdown.Item href="/locations">Windermere</NavDropdown.Item>
+                        <NavDropdown.Item href="/locations">Winter Park</NavDropdown.Item>
+                        <NavDropdown.Item href="/locations">Kissimmeee</NavDropdown.Item>
+                        <NavDropdown.Item href="/locations">Lake Mary</NavDropdown.Item>
+                        <NavDropdown.Item href="/locations">Winter Springs</NavDropdown.Item>
+                      </NavDropdown>
+                      <Nav.Link href="/specials">SPECIALS</Nav.Link>
+                      <NavDropdown title="REVIEWS" id="collasible-nav-dropdown">
+                        <NavDropdown.Item href="/Reviews">Testimonials</NavDropdown.Item>
+                        <NavDropdown.Item href="https://www.facebook.com/pages/category/Plumbing-Service/Aquaflow-Plumbing-Drain-Cleaning-106340521082142/">Facebook</NavDropdown.Item>
+                        <NavDropdown.Item href="https://www.thumbtack.com/fl/apopka/plumbing/aquaflow-plumbing/service/381348999605878794?project_pk=412011391633072132">Thumbtack</NavDropdown.Item>
+                        <NavDropdown.Item href="https://nextdoor.com/pages/aquaflow-plumbing-apopka-fl/">Nextdoor</NavDropdown.Item>
+                        <NavDropdown.Item href="https://www.google.com/maps/place/Aquaflow+Plumbing/@28.7095502,-81.5034693,15z/data=!4m12!1m6!3m5!1s0x0:0x994e208f3da9bc81!2sAquaflow+Plumbing!8m2!3d28.7096255!4d-81.5035551!3m4!1s0x0:0x994e208f3da9bc81!8m2!3d28.7096255!4d-81.5035551">Google Maps</NavDropdown.Item>
+                      </NavDropdown>
+                      <Nav.Link href="/contact">CONTACT</Nav.Link>
+                      <NavDropdown title="HELP" id="collasible-nav-dropdown">
+                        <NavDropdown.Item href="/faq">Faq</NavDropdown.Item>
+                        <NavDropdown.Item href="/helpfultips">Helpful Tips</NavDropdown.Item>
+                      </NavDropdown>
+                    </Nav>
+                  </Navbar.Collapse>
+          </Navbar>
       </div>
     );
   }
   
+
   export default MainNavBar;

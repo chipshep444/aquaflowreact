@@ -14,3 +14,15 @@ class Googlemap extends React.Component {
 }
 
 export default Googlemap;
+
+
+
+import React from 'react';
+
+function Footer() {
+    return (
+        <h1>Footer Content</h1>
+    );
+}
+
+export default Googlemap;

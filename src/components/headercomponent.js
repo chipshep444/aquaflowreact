@@ -1,6 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Button } from 'reactstrap';
 import { SocialIcon } from 'react-social-icons';
+import { Link } from 'react-router-dom';
+import SubscribeModal from './modal/subscribecomponent';
+import ScheduleModal from './modal/schedulecomponent';
 
 class Header extends React.Component {
     componentDidMount() {
@@ -14,6 +17,7 @@ class Header extends React.Component {
             s.parentNode?.insertBefore(gcse, s);
         })();
     }
+
     render() {
         return (
             <header>
@@ -24,24 +28,16 @@ class Header extends React.Component {
                 </div>
                 <div id="bglogocolor" className="row">
                     <div className="col">
-                        <img
-                            id="topmainlogo"
-                            className="img-fluid"
-                            src="/assets/img/aquaflowlogo-v1.jpg" alt="Aqauflow Plumbing"
-                        />
+                    <Link to="/"><img id="topmainlogo"className="img-fluid" src="images/aquaflowlogo-v1.jpg" alt="Aqauflow Plumbing"/></Link>
                         <div id="search" className="gcse-search"></div>
                     </div>
                     <div className="col-md-6">
                         <h1 id="freeestimate">FREE ESTIMATES!</h1>
                         <h1 id="freeestimate">(407) 444-8888</h1>
                         <div id="freeestimate3">
-                            <Button id="freeestimate2" color="info">
-                                Schedule Your Appointment
-                            </Button>{' '}
-                            <Button id="freeestimate2" color="info">
-                                {' '}
-                                Subscribe
-                            </Button>{' '}
+                            <ScheduleModal />
+                            <div id="mainbutspacer"></div>
+                            <SubscribeModal />
                         </div>
                     </div>
                 </div>
@@ -81,5 +77,6 @@ class Header extends React.Component {
         );
     }
 }
+
 
 export default Header;

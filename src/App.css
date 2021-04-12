@@ -87,3 +87,212 @@ h1, h2, h3 {
   background-color: black;
 }
 
+#cstest {
+  color: red;
+  text-align: center;
+}
+
+/* --Footer---*/ 
+
+#areasweserve {
+  border-spacing: 200px;
+  width: 300px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  margin: 5px;
+}
+
+#areasweserve2 {
+  border-spacing: 200px;
+  width: 500px;
+  text-align: left;
+  color: blue;
+  margin: 5px;
+  font-size: 25px;
+}
+
+#footerbar {
+  background-color: black;
+}
+
+#finance {
+  padding: 30px;
+  text-align: left;
+  color: white;
+  background-color: #46b6f6;
+  border: 10px solid white;
+}
+
+#contactus a:hover {
+  color: white; /*Comment- This is rollover color for nav at bottom of page*/
+  text-decoration: none; /*Comment- This removes the underline hyperlink*/
+}
+
+#contactus2 {
+  color: white;
+}
+
+#contactus3 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+#CarouselItem {
+  color: red;
+}
+
+/* --m1content---*/ 
+
+#mcontent1 {
+  background-color: white;
+}
+
+#bodycards {
+  padding: 20px;
+  width: auto;
+}
+
+/* --m2content---*/ 
+
+#mcontent2 {
+  background-color: #585858;
+}
+
+#mcontent2b {
+  background-color: #585858;
+  border:  #585858;
+}
+
+/* --m3content--About-*/ 
+#mcontent3 {
+  background-color: white; 
+}
+
+#mcontent3b {
+  border: white; 
+}
+
+#mcontent3c {
+  background-color: white; 
+}
+
+#mainTextblock {
+  background-color: #46b6f6;
+  border: #46b6f6; 
+}
+
+#aboutUspic {
+  box-shadow: 10px 10px 5px grey; 
+}
+
+#mcontent4 {
+  background-color: #00bce9; 
+}
+  
+#mcontent4b {
+  background-color: #00bce9;
+  border: #00bce9; 
+}
+
+#mcontent5 {
+  background-color: #17a2b8; 
+}
+
+#mcontent5b {
+  background-color: #17a2b8;
+  color: white;
+  border: #17a2b8; 
+}
+
+#mcontent75b {
+  opacity: 0.97; 
+}
+
+#servicearea {
+  margin-top: 30px; 
+}
+
+/* --Coupons Page---*/
+#mcontent11b {
+  border: dotted 2px black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 25px;
+  margin: 10px; 
+}
+
+/* --Reviews Page---*/
+#mcontent11 {
+  border: solid 2px black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 25px;
+  margin: 10px; 
+}
+
+/* --Dropdown Nav Bar Colors---*/
+div.dropdown-menu {
+  background-color: grey
+}
+
+/* unvisited link */
+#dropdowntext:link {
+  color: white;
+  text-decoration: none;
+}
+
+/* visited link */
+#dropdowntext:visited {
+  color: rgb(19, 255, 19);
+  text-decoration: none;
+}
+
+/* mouse over link */
+#dropdowntext:hover {
+  color: orange;
+  text-decoration: none;
+}
+
+/* selected link */
+#dropdowntext:active {
+  color: blue;
+  text-decoration: none;
+}
+
+#mcontent80b {
+  opacity: 0.97; 
+}
+
+/* --Faq Page---*/
+#accordcard1 {
+  background-color: #343a40;
+  color: white;
+}
+
+#accordcard1b {
+  background-color: #343a40; 
+}
+
+#accordcard2 {
+  background-color: #46b6f6; 
+}
+
+/* --Helpful Tips Page---*/
+#mcontent20 {
+  background-color: white; }
+
+#mcontent20b {
+  background-color: white;
+  border: white; }
+
+#mcontent21 {
+  background-color: #00bce9; }
+
+#mcontent21b {
+  background-color: #00bce9;
+  border: #00bce9; }
+
+/* --Header Component ---*/
+#mainbutspacer {
+  padding-top: 10px;
+}
