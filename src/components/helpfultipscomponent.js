@@ -2,7 +2,6 @@ import React from 'react';
 import Header from './headercomponent';
 import MainNavBar from './navbarcomponent';
 import Footer from './footercomponent';
-import { Link } from 'react-router-dom';
 import './bg.css';
 
 function Helpfultips() {

@@ -3,7 +3,6 @@ import Header from './headercomponent';
 import MainNavBar from './navbarcomponent';
 import Footer from './footercomponent';
 import { SocialIcon } from 'react-social-icons';
-import { Link } from 'react-router-dom';
 import ScheduleModal from './modal/schedulecomponent';
 
 function Locations() {

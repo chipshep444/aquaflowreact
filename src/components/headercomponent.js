@@ -1,5 +1,4 @@
-import React, {useState} from 'react';
-import { Button } from 'reactstrap';
+import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 import { Link } from 'react-router-dom';
 import SubscribeModal from './modal/subscribecomponent';

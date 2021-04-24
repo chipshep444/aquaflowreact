@@ -4,7 +4,6 @@ import MainNavBar from './navbarcomponent';
 import Footer from './footercomponent';
 import { Link } from 'react-router-dom';
 import ScheduleModal from './modal/schedulecomponent';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function Contact() {
     return (
@@ -55,7 +54,6 @@ function Contactcontent() {
                                         <li>Apopka, FL 32712</li>
                                         <li>Telephone: 407-444-8888</li>
                                         <li><p><ScheduleModal /></p></li>
-                                        <li><p><button type="button" className="btn btn-info" data-toggle="modal" data-target="#feedbackModal">Customer Feedback</button></p></li>
                                         <li><p><button type="button" className="btn btn-info"><Link id="contactuscareers" to="/careers">Careers</Link></button></p></li>
                                     </ul>
                                     <ul className="no-bullets">

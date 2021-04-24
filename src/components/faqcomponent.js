@@ -2,7 +2,6 @@ import React from 'react';
 import Header from './headercomponent';
 import MainNavBar from './navbarcomponent';
 import Footer from './footercomponent';
-import { Link } from 'react-router-dom';
 import './bg.css';
 import { Card, Accordion } from 'react-bootstrap'
 
@@ -373,28 +372,3 @@ function Faqcontent() {
 }
 
 export default Faq;
-
-
-{/* <div class="col">
-                <h5 className="card-title font-weight-bold">Frequently Asked Plumbing Questions</h5>
-                <p className="font-weight-bold">AquaFlow Plumbing Services takes pride in providing honest estimates and high-quality work the first time. For unbeatable quality, service and experience, call us today at (407) 444-8888.
-                  Using his expertise and honest practices, Brian and his crew have developed a reputation as one of the most trusted, family-owned and operated plumbing companies in all of central Florida. Below you will find their expert advice for some of the most frequently asked plumbing, water heater & water damage questions in the industry.</p>
-                </div>
-          <Accordion defaultActiveKey="0">
-            <Card>
-              <Accordion.Toggle as={Card.Header} eventKey="0">
-                Click me!
-              </Accordion.Toggle>
-              <Accordion.Collapse eventKey="0">
-                <Card.Body>Hello! I'm the body</Card.Body>
-              </Accordion.Collapse>
-            </Card>
-            <Card>
-              <Accordion.Toggle as={Card.Header} eventKey="1">
-                Click me!
-              </Accordion.Toggle>
-              <Accordion.Collapse eventKey="1">
-                <Card.Body>Hello! I'm another body</Card.Body>
-              </Accordion.Collapse>
-            </Card>
-          </Accordion> */}

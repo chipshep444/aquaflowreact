@@ -25,7 +25,7 @@ import Repipe from './components/repipecomponent';
 import Terms from './components/termscomponent';
 import Privacypolicy from './components/privacypolicycomponent';
 import './App.css';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 function App() {
   return (

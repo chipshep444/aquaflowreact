@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome } from '@fortawesome/free-solid-svg-icons'
-import { faTint } from '@fortawesome/free-solid-svg-icons'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 
 const homeicon = <FontAwesomeIcon icon={faHome} />
-const watericon = <FontAwesomeIcon icon={faTint} />
 const phoneicon = <FontAwesomeIcon icon={faPhone} />
 
   const MainNavBar = (props) => {
