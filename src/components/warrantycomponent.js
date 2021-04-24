@@ -4,6 +4,7 @@ import MainNavBar from './navbarcomponent';
 import Footer from './footercomponent';
 import { Link } from 'react-router-dom';
 import './bg.css';
+import ScheduleModal from './modal/schedulecomponent';
 
 function Warranty() {
     return (
@@ -57,7 +58,9 @@ function Warrantycontent() {
                             <p><b>A Trusted Professional on Your Home Services Team.</b> Your technician is not only trained to care for your equipment; he’s trained to care for your home. You’ll take comfort in knowing our technicians are drug-tested, and background checked. First rate providers are all we will allow in your home!</p>
                             <p><b>100% Satisfaction Guarantee.</b> We promise your complete satisfaction—GUARANTEED! If you are not fully satisfied, let us know, and we’ll make it right or you don’t pay!</p>
                             <p><b>Transferable.</b> Your service partner agreement can either be transferred to your new home or to the buyer of the home you are selling. Your choice!</p>
-                            <h1 id="freeestimate"><button type="button" className="btn btn-info" data-toggle="modal" data-target="#scheduleModal"><i className="fa fa-envelope-o fa-lg" /> Schedule Your Appointment</button></h1>  
+                            <div id="freeestimate3">
+                              <ScheduleModal />
+                            </div>
                           </div>
                         </div>
                       </div>

@@ -4,6 +4,7 @@ import MainNavBar from './navbarcomponent';
 import Footer from './footercomponent';
 import { Link } from 'react-router-dom';
 import './bg.css';
+import ScheduleModal from './modal/schedulecomponent';
 
 function Leakdetection() {
     return (
@@ -53,7 +54,9 @@ function Leakdetectioncomponent() {
                             <p className="font-weight-bold">Leak Repairs</p> 
                             <p>Once diagnosed, Aquaflow Plumbing can help you with a range of possible solutions and a full up-front price for repairs, so you can make an informed choice as to which course of action to take. We are fully licensed and insured professionals, and our workmanship is backed up by a written guarantee.</p>
                             <p className="font-weight-bold">Have a Plumbing problem that needs to be addressed immediately or need the services of a professional Orlando, FL Contractor you can count on? Contact AquaFlow Plumbing and Drain Cleaning today at 407-444-8888.</p> 
-                            <h1 id="freeestimate"><button type="button" className="btn btn-info" data-toggle="modal" data-target="#scheduleModal"><i className="fa fa-envelope-o fa-lg" /> Schedule Your Appointment</button></h1> 
+                            <div id="freeestimate3">
+                                <ScheduleModal />
+                            </div>
                             </div>
                         </div>
                         </div>

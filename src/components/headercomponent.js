@@ -23,7 +23,7 @@ class Header extends React.Component {
             <header>
                 <div id="emerservice2" className="row">
                     <div className="col">
-                        <h1 id="emerservice">24 HOUR EMERGENCY SERVICE</h1>
+                        <h1 id="emerservice"><Link id="emerservice" to="/contact">24 HOUR EMERGENCY SERVICE</Link></h1>
                     </div>
                 </div>
                 <div id="bglogocolor" className="row">

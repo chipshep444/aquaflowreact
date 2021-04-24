@@ -4,6 +4,7 @@ import MainNavBar from './navbarcomponent';
 import Footer from './footercomponent';
 import { SocialIcon } from 'react-social-icons';
 import { Link } from 'react-router-dom';
+import ScheduleModal from './modal/schedulecomponent';
 
 function Locations() {
     return (
@@ -69,7 +70,11 @@ function Locationscontent() {
                       <li>1722 Fairhaven Ct</li>
                       <li>Apopka, FL 32712</li>
                       <li>Telephone: 407-444-8888</li>
-                      <li><h1><button type="button" className="btn btn-info" data-toggle="modal" data-target="#scheduleModal"><i className="fa fa-envelope-o fa-lg" /> Schedule Your Appointment</button></h1> </li>
+                      <li>
+                        <div>
+                          <ScheduleModal />
+                        </div>
+                      </li>
                     </ul>
                   </div>
                   <div id="servicearea" className="col-sm-6">

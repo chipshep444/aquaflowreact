@@ -3,6 +3,7 @@ import Header from './headercomponent';
 import MainNavBar from './navbarcomponent';
 import Footer from './footercomponent';
 import { Link } from 'react-router-dom';
+import ScheduleModal from './modal/schedulecomponent';
 
 function Finance() {
     return (
@@ -50,7 +51,9 @@ function Financecontent() {
                             <br />
                             <p>We can repipe most homes in one day. And we will match or beat by 10%, any bona fide written repipe quote wherever possible ( from an active Florida licensed plumbing contractor). Our repipes start as low as $1,475.00 with a Lifetime warranty. Call us today for more details.</p>
                             <p className="font-weight-bold">Call AquaFlow Plumbing and Drain Cleaning today at 407-444-8888</p>
-                            <h1 id="freeestimate"><button type="button" className="btn btn-info" data-toggle="modal" data-target="#scheduleModal"><i className="fa fa-envelope-o fa-lg" /> Schedule Your Appointment</button></h1>  
+                              <div id="freeestimate3">
+                              < ScheduleModal />
+                              </div>
                           </div>
                         </div>
                       </div>

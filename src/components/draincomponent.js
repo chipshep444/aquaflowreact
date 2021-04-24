@@ -4,6 +4,7 @@ import MainNavBar from './navbarcomponent';
 import Footer from './footercomponent';
 import { Link } from 'react-router-dom';
 import './bg.css';
+import ScheduleModal from './modal/schedulecomponent';
 
 function Drain() {
     return (
@@ -54,7 +55,9 @@ function Draincontent() {
                             <p>Many of the countless pipes beneath our Orlando homes and streets are very old. Though very durable–typically made of cast iron or terra cotta–these structures are not invulnerable to disruption caused by exterior sources. Roots commonly cause clogs which require professional sewer line cleaning from a professional Orlando sewer line cleaning company, like AquaFlow Plumbing.</p>
                             <p>If you have a  repeating problem or the cable cannot get through this is when cameras come into play, however, if you just moved in or finished a remodel sometimes its good to check out the line condition. Here are some pictures of some common problems below.</p>
                             <p className="font-weight-bold">Have a Plumbing problem that needs to be addressed immediately or need the services of a professional Orlando, FL Contractor you can count on? Contact AquaFlow Plumbing and Drain Cleaning today at 407-444-8888.</p> 
-                            <h1 id="freeestimate"><button type="button" className="btn btn-info" data-toggle="modal" data-target="#scheduleModal"><i className="fa fa-envelope-o fa-lg" /> Schedule Your Appointment</button></h1> 
+                            <div id="freeestimate3">
+                                <ScheduleModal />
+                            </div>
                             </div>
                         </div>
                         </div>

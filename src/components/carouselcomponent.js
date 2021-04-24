@@ -1,90 +1,99 @@
 import React, { useState } from 'react';
-import {
-  Carousel,
-  CarouselItem,
-  CarouselControl,
-  CarouselIndicators,
-  CarouselCaption
-} from 'reactstrap';
+import Carousel from 'react-bootstrap/Carousel'
+import { Link } from 'react-router-dom';
 
-const items = [
-  {
-    src: '/images/caro_01c.jpg',
-    altText: '24 Hour Emergency Service',
-    caption: '24 Hour Emergency Service'
-  },
-  {
-    src: '/images/caro_02c.jpg',
-    altText: 'Home Water Filtration',
-    caption: 'Home Water Filtration'
-  },
-  {
-    src: '/images/caro_03c.jpg',
-    altText: 'Garbage Disposal Repair and Installation',
-    caption: 'Garbage Disposal Repair and Installation'
-  },
-  {
-    src: '/images/caro_04c.jpg',
-    altText: 'Leak Detection',
-    caption: 'Leak Detection'
-  },
-  {
-    src: '/images/caro_05c.jpg',
-    altText: 'Commercial Plumbing',
-    caption: 'Commercial Plumbing'
-  },
-  {
-    src: '/images/caro_06c.jpg',
-    altText: 'We Serve the Orlando Area!',
-    caption: 'We Serve the Orlando Area!'
-  }
-];
 
-const Caro = (props) => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [animating, setAnimating] = useState(false);
+const mystyle = {
+  height: "auto",
+  width: "100%",
+};
 
-  const next = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
-    setActiveIndex(nextIndex);
-  }
+const mystyle2 = {
+  color: "white",
+};
 
-  const previous = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
-    setActiveIndex(nextIndex);
-  }
 
-  const goToIndex = (newIndex) => {
-    if (animating) return;
-    setActiveIndex(newIndex);
-  }
-
-  const slides = items.map((item) => {
-    return (
-      <CarouselItem
-        onExiting={() => setAnimating(true)}
-        onExited={() => setAnimating(false)}
-        key={item.src}
-      >
-        <img src={item.src} alt={item.altText} />
-        <CarouselCaption captionHeader={item.caption}/>
-      </CarouselItem>
-    );
-  });
-
+function Caro() {
   return (
-    <Carousel
-      activeIndex={activeIndex}
-      next={next}
-      previous={previous}
-    >
-      <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
-      {slides}
-      <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-      <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
+
+    <Carousel className="d-none d-lg-block" style={mystyle}>
+      <Carousel.Item interval={1000}> 
+        <img 
+          className="d-block w-100"
+          src="/images/caro_01c.jpg"
+          alt="24 Hour Emergency Service"
+        />
+        <Carousel.Caption>
+          <h3 id="caro2">24 Hour Emergency Service</h3>
+          <button type="button" class="btn btn-dark"> <Link style={mystyle2} to="/emergency">READ MORE</Link></button>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="/images/caro_02c.jpg"
+          alt="Home Water Filtration"
+        />
+
+        <Carousel.Caption>
+          <h3 id="caro2">Home Water Filtration</h3>
+          <button type="button" class="btn btn-dark"><Link style={mystyle2} to="/homewater">READ MORE</Link></button>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="/images/caro_03c.jpg"
+          alt="Garbage Disposal Repair and Installation"
+        />
+
+        <Carousel.Caption>
+          <h3 id="caro2">Garbage Disposal Repair and Installation</h3>
+          <button type="button" class="btn btn-dark"><Link style={mystyle2} to="/garbagedisposal">READ MORE</Link></button>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="/images/caro_04c.jpg"
+          alt="Leak Detection"
+        />
+
+        <Carousel.Caption>
+          <h3 id="caro2">Leak Detection</h3>
+          <button type="button" class="btn btn-dark"><Link style={mystyle2} to="/leakdetection">READ MORE</Link></button>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="/images/caro_05c.jpg"
+          alt="Commercial Plumbing"
+        />
+
+        <Carousel.Caption>
+          <h3 id="caro2">Commercial Plumbing</h3>
+          <button type="button" class="btn btn-dark"><Link style={mystyle2} to="/commercial">READ MORE</Link></button>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="/images/caro_06c.jpg"
+          alt="We Serve the Orlando Area!"
+        />
+
+        <Carousel.Caption>
+          <h3 id="caro2">We Serve the Orlando Area!</h3>
+          <p id="caro2">We Serve the Orlando Area!</p>
+          <p id="caro3">Metro West ~ Windermere ~ Winter Garden ~ Casselberry</p>
+          <p id="caro3">Ocoee ~ Winter Park ~ Altamonte Springs ~ Kissimmee</p>
+          <p id="caro3">Clermont ~ Lake Mary ~ Sanford ~ Winter Springs</p>
+          <button type="button" class="btn btn-dark"><Link style={mystyle2} to="/locations">READ MORE</Link></button>
+        </Carousel.Caption>
+      </Carousel.Item>
     </Carousel>
+
   );
 }
 

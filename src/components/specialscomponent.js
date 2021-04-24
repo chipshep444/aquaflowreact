@@ -4,6 +4,7 @@ import MainNavBar from './navbarcomponent';
 import Footer from './footercomponent';
 import { Link } from 'react-router-dom';
 import './bg.css';
+import ScheduleModal from './modal/schedulecomponent';
 
 function Specials() {
     return (
@@ -50,7 +51,9 @@ function Specialscontent() {
                           <p>* Present at time of service. Cannot be combined with other offers or discounts. Some restrictions apply. Expires 12/31/2021.</p>
                           <p>Discount Code: 25DC21</p>
                           <p><button onclick="window.print()" type="button" className="btn btn-primary">Print this Promotion</button></p>
-                          <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#scheduleModal">Schedule using this Promotion</button>
+                          <div>
+                            <ScheduleModal />
+                          </div>
                         </div>
                       </div>
                       <div id="mcontent11b" className="card" style={{width: '28rem'}}>
@@ -59,7 +62,9 @@ function Specialscontent() {
                           <p>* Present at time of service. Cannot be combined with other offers or discounts. Some restrictions apply. Expires 12/31/2021.</p>
                           <p>Discount Code: 25PSC21</p>
                           <p><button onclick="window.print()" type="button" className="btn btn-primary">Print this Promotion</button></p>
-                          <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#scheduleModal">Schedule using this Promotion</button>
+                          <div>
+                            <ScheduleModal />
+                          </div>
                         </div>
                       </div>
                       <div id="mcontent11b" className="card" style={{width: '28rem'}}>
@@ -68,7 +73,9 @@ function Specialscontent() {
                           <p>* Present at time of service. Cannot be combined with other offers or discounts. Some restrictions apply. Expires 12/31/2021.</p>
                           <p>Discount Code: 25CHR21</p>
                           <p><button onclick="window.print()" type="button" className="btn btn-primary">Print this Promotion</button></p>
-                          <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#scheduleModal">Schedule using this Promotion</button>
+                          <div>
+                            <ScheduleModal />
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -81,7 +88,9 @@ function Specialscontent() {
                           <p>* Present at time of service. Cannot be combined with other offers or discounts. Some restrictions apply. Expires 12/31/2021.</p>
                           <p>Discount Code: 50IWH21</p>
                           <p><button onclick="window.print()" type="button" className="btn btn-primary">Print this Promotion</button></p>
-                          <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#scheduleModal">Schedule using this Promotion</button>
+                          <div>
+                            <ScheduleModal />
+                          </div>
                         </div>
                       </div>
                       <div id="mcontent11b" className="card" style={{width: '28rem'}}>
@@ -90,7 +99,9 @@ function Specialscontent() {
                           <p>* Present at time of service. Cannot be combined with other offers or discounts. Some restrictions apply. Expires 12/31/2021.</p>
                           <p>Discount Code: 5SC21</p>
                           <p><button onclick="window.print()" type="button" className="btn btn-primary">Print this Promotion</button></p>
-                          <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#scheduleModal">Schedule using this Promotion</button>
+                          <div>
+                            <ScheduleModal />
+                          </div>
                         </div>
                       </div>
                       <div id="mcontent11b" className="card" style={{width: '28rem'}}>
@@ -99,7 +110,9 @@ function Specialscontent() {
                           <p>* Present at time of service. Cannot be combined with other offers or discounts. Some restrictions apply. Expires 12/31/2021.</p>
                           <p>Discount Code: 25LD21</p>
                           <p><button onclick="window.print()" type="button" className="btn btn-primary">Print this Promotion</button></p>
-                          <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#scheduleModal">Schedule using this Promotion</button>
+                          <div>
+                            <ScheduleModal />
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -115,7 +128,9 @@ function Specialscontent() {
                   <br />
                   <div>
                     <p className="text-center font-weight-bold">Have a plumbing problem that needs to be addressed immediately? Call AquaFlow Plumbing today at 407-444-8888</p>
-                    <h1 id="freeestimate"><a href="schedule-now.html"><button type="button" className="btn btn-info"><i className="fa fa-envelope-o fa-lg" /> Schedule Your Appointment</button></a></h1> 
+                    <div id="freeestimate3">
+                      <ScheduleModal />
+                    </div>
                   </div>
                 </div>
               </div>

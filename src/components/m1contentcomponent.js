@@ -1,4 +1,6 @@
 import React from 'react';
+import ScheduleModal from './modal/schedulecomponent';
+import EmailUsModal from './modal/emailuscomponent';
 
 function M1content() {
     return (
@@ -13,8 +15,10 @@ function M1content() {
                         <h2 className="card-title text-center">1</h2>
                         <h3 className="card-title text-center">Tell us your problem</h3>
                         <p className="text-center">Call us or complete out service form online</p>
+                        <div id="freeestimate3">
+                            <ScheduleModal />
+                        </div>
                         <a href="tel:#"><h1 id="freeestimate"><button type="button" className="btn btn-info"><i className="fa fa-phone-square fa-lg" /> Call Us</button></h1></a>
-                        <h1 id="freeestimate"><button type="button" className="btn btn-info" data-toggle="modal" data-target="#scheduleModal"><i className="fa fa-envelope-o fa-lg" /> Schedule Your Appointment</button></h1>
                     </div>
                     </div>
                     <div className="card text-white bg-warning" style={{width: '24rem'}}>
@@ -23,7 +27,9 @@ function M1content() {
                         <h3 className="card-title text-center">Confirm Appointment</h3>
                         <p className="text-center">We work around your schedule and let you pick the most convenient time</p>
                         <a href="tel:#"><h1 id="freeestimate"><button type="button" className="btn btn-info"><i className="fa fa-phone-square fa-lg" />Call Us</button></h1></a>
-                        <h1 id="freeestimate"><button type="button" className="btn btn-info" data-toggle="modal" data-target="#scheduleModal"><i className="fa fa-envelope-o fa-lg" /> Email Us</button></h1>
+                        <div id="freeestimate3">
+                            <EmailUsModal />
+                        </div>
                     </div>
                     </div>
                     <div className="card text-white bg-success" style={{width: '24rem'}}>

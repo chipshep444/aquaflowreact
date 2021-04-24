@@ -4,6 +4,7 @@ import MainNavBar from './navbarcomponent';
 import Footer from './footercomponent';
 import { Link } from 'react-router-dom';
 import './bg.css';
+import ScheduleModal from './modal/schedulecomponent';
 
 function Residential() {
     return (
@@ -59,7 +60,9 @@ function Residentialcontent() {
                                 <li>Free Estimates – we are happy to provide free estimates on-site for your convenience – and in most cases we can have a technician complete the work the same day you call us.</li>
                             </ul>
                             <p className="font-weight-bold">Have a Plumbing problem that needs to be addressed immediately or need the services of a professional Orlando, FL Contractor you can count on? Contact AquaFlow Plumbing and Drain Cleaning today at 407-444-8888.</p> 
-                            <h1 id="freeestimate"><button type="button" className="btn btn-info" data-toggle="modal" data-target="#scheduleModal"><i className="fa fa-envelope-o fa-lg" /> Schedule Your Appointment</button></h1> 
+                            <div id="freeestimate3">
+                                <ScheduleModal />
+                            </div>
                             </div>
                         </div>
                         </div>

@@ -4,6 +4,7 @@ import MainNavBar from './navbarcomponent';
 import Footer from './footercomponent';
 import { Link } from 'react-router-dom';
 import './bg.css';
+import ScheduleModal from './modal/schedulecomponent';
 
 function Waterheater() {
     return (
@@ -51,7 +52,9 @@ function Waterheatercontent() {
                             <p>Whether your hot water heater is traditional, tankless, or even solar, our professional plumbers and plumbing technicians are reliable, experienced and on call 24 hours a day to respond to your plumbing emergency. We can repair your current hot water heater or install a new one in Orlando, FL. Don’t fret, We will get your water hot and steamy in no time at all.</p>
                             <p>Aquaflow Plumbing does repair and replace water heaters. We replace out elements and thermostats, we also install a full range of gas water heaters and tankless hot water heaters including piping new gas lines to the heaters where needed. After we install the water heater we dispose of the old one. Call our office for more details. </p>
                             <p className="font-weight-bold">Have a Plumbing problem that needs to be addressed immediately or need the services of a professional Orlando, FL Contractor you can count on? Contact AquaFlow Plumbing and Drain Cleaning today at 407-444-8888.</p> 
-                            <h1 id="freeestimate"><button type="button" className="btn btn-info" data-toggle="modal" data-target="#scheduleModal"><i className="fa fa-envelope-o fa-lg" /> Schedule Your Appointment</button></h1> 
+                            <div id="freeestimate3">
+                                <ScheduleModal />
+                            </div>
                             </div>
                         </div>
                         </div>

@@ -4,6 +4,7 @@ import MainNavBar from './navbarcomponent';
 import Footer from './footercomponent';
 import { Link } from 'react-router-dom';
 import './bg.css';
+import ScheduleModal from './modal/schedulecomponent';
 
 function Burstpipe() {
     return (
@@ -61,7 +62,9 @@ function Burstpipecontent() {
                                 <li>Unblock sinks, showers, baths and basins</li>
                                 <li>Drain Cleaning</li>
                             </ul>
-                            <h1 id="freeestimate"><button type="button" className="btn btn-info" data-toggle="modal" data-target="#scheduleModal"><i className="fa fa-envelope-o fa-lg" /> Schedule Your Appointment</button></h1> 
+                            <div id="freeestimate3">
+                                <ScheduleModal />
+                            </div>
                             </div>
                         </div>
                         </div>

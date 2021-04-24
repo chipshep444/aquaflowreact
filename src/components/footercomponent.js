@@ -2,7 +2,6 @@ import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 import { Link } from 'react-router-dom';
 
-
 function Footer() {
     return (
   
@@ -125,7 +124,7 @@ function Footer() {
             </div>
             <div className="row">
               <div className="col" id="contactus3">
-                <h6 id="contactus"><Link to="/">Home</Link> | <Link to="/about">About</Link> | <a href="terms-of-use.html">Terms of Use</a> | <a href="contact.html">Contact</a> | <a href="privacypolicy.html">Privacy Policy</a></h6>
+                <h6 id="contactus"><Link to="/">Home</Link> | <Link to="/about">About</Link> | <Link to="/terms">Terms of Use</Link> | <Link to="/contact">Contact</Link> | <Link to="/privacypolicy">Privacy Policy</Link></h6>
                 <h6 id="contactus2">Copyright <i className="fa fa-copyright" aria-hidden="true" /> 2021 AquaFlow Plumbing. All Rights Reserved.</h6>
               </div>
             </div>

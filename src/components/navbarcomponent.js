@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHome } from '@fortawesome/free-solid-svg-icons'
+import { faTint } from '@fortawesome/free-solid-svg-icons'
+import { faPhone } from '@fortawesome/free-solid-svg-icons'
+
+const homeicon = <FontAwesomeIcon icon={faHome} />
+const watericon = <FontAwesomeIcon icon={faTint} />
+const phoneicon = <FontAwesomeIcon icon={faPhone} />
 
   const MainNavBar = (props) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +29,7 @@ import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
                   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                   <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mx-auto">
-                      <Nav.Link href="/">HOME</Nav.Link>
+                      <Nav.Link href="/">{homeicon}HOME</Nav.Link>
                       <NavDropdown title="COMPANY" id="collasible-nav-dropdown">
                         <NavDropdown.Item href="/about">About</NavDropdown.Item>
                         <NavDropdown.Item href="/finance">Pricing & Financing</NavDropdown.Item>
@@ -65,7 +73,7 @@ import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
                         <NavDropdown.Item href="https://nextdoor.com/pages/aquaflow-plumbing-apopka-fl/">Nextdoor</NavDropdown.Item>
                         <NavDropdown.Item href="https://www.google.com/maps/place/Aquaflow+Plumbing/@28.7095502,-81.5034693,15z/data=!4m12!1m6!3m5!1s0x0:0x994e208f3da9bc81!2sAquaflow+Plumbing!8m2!3d28.7096255!4d-81.5035551!3m4!1s0x0:0x994e208f3da9bc81!8m2!3d28.7096255!4d-81.5035551">Google Maps</NavDropdown.Item>
                       </NavDropdown>
-                      <Nav.Link href="/contact">CONTACT</Nav.Link>
+                      <Nav.Link href="/contact">{phoneicon}CONTACT</Nav.Link>
                       <NavDropdown title="HELP" id="collasible-nav-dropdown">
                         <NavDropdown.Item href="/faq">Faq</NavDropdown.Item>
                         <NavDropdown.Item href="/helpfultips">Helpful Tips</NavDropdown.Item>

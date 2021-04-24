@@ -4,6 +4,7 @@ import MainNavBar from './navbarcomponent';
 import Footer from './footercomponent';
 import { Link } from 'react-router-dom';
 import './bg.css';
+import ScheduleModal from './modal/schedulecomponent';
 
 function Homewater() {
     return (
@@ -58,7 +59,9 @@ function Homewatercontent() {
                             <p className="font-weight-bold">Aeration Systems</p>
                             <p>Aeration is a unit process in which air and water are brought into intimate contact. These water filtration systems are often used for carbon dioxide, ammonia and hydrogen sulfide reduction, oxidation of iron and is also an effective method of bacteria control.</p>
                             <p className="font-weight-bold">Have a Plumbing problem that needs to be addressed immediately or need the services of a professional Orlando, FL Contractor you can count on? Contact AquaFlow Plumbing and Drain Cleaning today at 407-444-8888.</p> 
-                            <h1 id="freeestimate"><button type="button" className="btn btn-info" data-toggle="modal" data-target="#scheduleModal"><i className="fa fa-envelope-o fa-lg" /> Schedule Your Appointment</button></h1> 
+                            <div id="freeestimate3">
+                                <ScheduleModal />
+                            </div>
                             </div>
                         </div>
                         </div>

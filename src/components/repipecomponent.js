@@ -4,6 +4,7 @@ import MainNavBar from './navbarcomponent';
 import Footer from './footercomponent';
 import { Link } from 'react-router-dom';
 import './bg.css';
+import ScheduleModal from './modal/schedulecomponent';
 
 function Repipe() {
     return (
@@ -74,7 +75,9 @@ function Repipecontent() {
                             <p>Another type of piping that needs to be replaced quickly is polybutylene. This material, also once highly regarded, reveals a propensity for premature failure. Polybutylene is likely to disintegrate or decompose and lead to significant wear over time, causing the pipe to burst.</p>
                             <p>Avoid significant property damage and consult your trusted plumber for the steps you need to take to ensure your plumbing lines are safe for long-term use.</p>
                             <p className="font-weight-bold">Have a Plumbing problem that needs to be addressed immediately or need the services of a professional Orlando, FL Contractor you can count on? Contact AquaFlow Plumbing and Drain Cleaning today at 407-444-8888.</p> 
-                            <h1 id="freeestimate"><button type="button" className="btn btn-info" data-toggle="modal" data-target="#scheduleModal"><i className="fa fa-envelope-o fa-lg" /> Schedule Your Appointment</button></h1> 
+                            <div id="freeestimate3">
+                                <ScheduleModal />
+                            </div>
                             </div>
                         </div>
                         </div>

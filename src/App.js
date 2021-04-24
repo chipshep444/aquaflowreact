@@ -22,6 +22,8 @@ import Leakdetection from './components/leakdetectioncomponent';
 import Homewater from './components/homewatercomponent';
 import Slab from './components/slabcomponent';
 import Repipe from './components/repipecomponent';
+import Terms from './components/termscomponent';
+import Privacypolicy from './components/privacypolicycomponent';
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
@@ -52,6 +54,8 @@ function App() {
         <Route path="/homewater" component={Homewater} />
         <Route path="/slab" component={Slab} />
         <Route path="/repipe" component={Repipe} />
+        <Route path="/terms" component={Terms} />
+        <Route path="/privacypolicy" component={Privacypolicy} />
       </Switch>
     </main>
   );

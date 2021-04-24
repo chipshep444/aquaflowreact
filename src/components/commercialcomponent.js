@@ -4,6 +4,7 @@ import MainNavBar from './navbarcomponent';
 import Footer from './footercomponent';
 import { Link } from 'react-router-dom';
 import './bg.css';
+import ScheduleModal from './modal/schedulecomponent';
 
 function Commercial() {
     return (
@@ -52,7 +53,9 @@ function Commercialcontent() {
                             <p>We go the extra mile to provide an honest team of knowledgeable plumbers while offering competitive rates. We believe in doing the job right the first time, utilizing top quality industry standard parts to ensure that everything works properly. You can trust us to provide you with the service you deserve, satisfaction guaranteed!</p>
                             <p>The Commercial Division includes new construction, renovation, remodel, and design build. Past projects include schools, retail, hotels, churches, medical, retirement facilities, manufacturing and athletic facilities.</p>
                             <p className="font-weight-bold">Have a Plumbing problem that needs to be addressed immediately or need the services of a professional Orlando, FL Contractor you can count on? Contact AquaFlow Plumbing and Drain Cleaning today at 407-444-8888.</p> 
-                            <h1 id="freeestimate"><button type="button" className="btn btn-info" data-toggle="modal" data-target="#scheduleModal"><i className="fa fa-envelope-o fa-lg" /> Schedule Your Appointment</button></h1> 
+                            <div id="freeestimate3">
+                                <ScheduleModal />
+                            </div>
                             </div>
                         </div>
                         </div>
