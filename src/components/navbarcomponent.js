@@ -15,7 +15,7 @@ const phoneicon = <FontAwesomeIcon icon={faPhone} />
   
     return (
       <div>
-        <Navbar id="mainnavbar" collapseOnSelect expand="lg">
+        <Navbar id="mainnavbar" collapseOnSelect expand="lg" variant="dark">
             <Navbar.Brand href="#home">
               <img
                 src="/images/droplogo30pix.jpg"
